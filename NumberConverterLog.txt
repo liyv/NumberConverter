@@ -1,0 +1,10 @@
+[15/08/05 13:31:31] created logger successfully
+[15/08/05 13:31:31] starting GUI...
+[15/08/05 13:31:31] GUI frame modified
+[15/08/05 13:31:31] binary elements were created successfully
+[15/08/05 13:31:31] octal elements were created successfully
+[15/08/05 13:31:31] decimal elements were created successfully
+[15/08/05 13:31:31] hexadecimal elements were created successfully
+[15/08/05 13:31:31] version label created
+[15/08/05 13:31:31] GUI was painted succesfully
+[15/08/05 13:31:31] main-thread ended
