@@ -20,8 +20,8 @@ public class UserInterface extends JFrame{
    JTextField decimalText = new JTextField();
    JTextField hexadecimalText = new JTextField();
    
-   JCheckBox checkLog = new JCheckBox("enable log feature");
-   JLabel version = new JLabel("v4");
+   JCheckBox checkLog = new JCheckBox("enable logger");
+   JLabel version = new JLabel("v5");
    
    public UserInterface(){
       
@@ -31,7 +31,7 @@ public class UserInterface extends JFrame{
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setResizable(false);
       setLayout(null);
-      NumberConverter.log("GUI frame modified");
+      NumberConverter.logger.log("GUI frame modified");
       
       binaryLabel.setBounds(2, 8, 350, 15);
       binaryLabel.setText("Binary");
@@ -41,7 +41,7 @@ public class UserInterface extends JFrame{
       binaryText.setToolTipText("Limit: 50");
       binaryText.addActionListener(new ReturnListener());
       add(binaryText);
-      NumberConverter.log("binary elements were created successfully");
+      NumberConverter.logger.log("binary elements were created successfully");
       
       octalLabel.setBounds(2, 60, 350, 15);
       octalLabel.setText("Octal");
@@ -51,7 +51,7 @@ public class UserInterface extends JFrame{
       octalText.setToolTipText("Limit: 21");
       octalText.addActionListener(new ReturnListener());
       add(octalText);
-      NumberConverter.log("octal elements were created successfully");
+      NumberConverter.logger.log("octal elements were created successfully");
       
       decimalLabel.setBounds(2, 112, 350, 15);
       decimalLabel.setText("Decimal");
@@ -61,7 +61,7 @@ public class UserInterface extends JFrame{
       decimalText.setToolTipText("Limit: 19");
       decimalText.addActionListener(new ReturnListener());
       add(decimalText);
-      NumberConverter.log("decimal elements were created successfully");
+      NumberConverter.logger.log("decimal elements were created successfully");
       
       hexadecimalLabel.setBounds(2, 164, 350, 15);
       hexadecimalLabel.setText("Hexadecimal");
@@ -71,12 +71,12 @@ public class UserInterface extends JFrame{
       hexadecimalText.setToolTipText("Limit: 15");
       hexadecimalText.addActionListener(new ReturnListener());
       add(hexadecimalText);
-      NumberConverter.log("hexadecimal elements were created successfully");
+      NumberConverter.logger.log("hexadecimal elements were created successfully");
       
       version.setBounds(335, 220, 10, 20);
       version.setFont(new Font("version", Font.PLAIN, 8));
       add(version);
-      NumberConverter.log("version label created");
+      NumberConverter.logger.log("version label created");
       
       checkLog.setBounds(0, 210, 150, 20);
       checkLog.setSelected(true);
@@ -84,7 +84,7 @@ public class UserInterface extends JFrame{
       add(checkLog);
       
       setVisible(true);
-      NumberConverter.log("GUI was painted succesfully");
+      NumberConverter.logger.log("GUI was painted succesfully");
       
    }
 

@@ -12,12 +12,12 @@ public class CheckListener implements ItemListener{
    
    @Override
    public void itemStateChanged(ItemEvent e){
-      NumberConverter.log("de.scriptim.CheckListener was triggered...");
+      NumberConverter.logger.log("de.scriptim.CheckListener was triggered...");
       if(e.getStateChange() == ItemEvent.SELECTED){
          NumberConverter.doLog = true;
-         NumberConverter.log("Logger enabled");
+         NumberConverter.logger.log("Logger enabled");
       }else{
-         NumberConverter.log("Logger disabled");
+         NumberConverter.logger.log("Logger disabled");
          NumberConverter.doLog = false;
       }
    }
